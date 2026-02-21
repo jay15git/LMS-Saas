@@ -54,8 +54,10 @@ export const configureAssistant = (voice: string, style: string) => {
         },
       ],
     },
-    clientMessages: [],
-    serverMessages: [],
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    clientMessages: [] as any,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    serverMessages: [] as any,
   };
   return vapiAssistant;
 };
